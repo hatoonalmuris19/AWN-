@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التنبيهات</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-title-key="alertsTitle">
+    <div class="shell">
+        <section class="hero">
+            <div class="hero-top">
+                <div class="brand">
+                    <div class="brand-badge">AWN</div>
+                    <span data-i18n="siteTitle">نظام عون للحماية من الاحتيال</span>
+                </div>
+                <nav class="nav">
+                    <a href="/index" data-i18n="navMessage">تحليل الرسائل</a>
+                    <a href="/alerts" data-i18n="navAlerts">التنبيهات</a>
+                    <a href="/about" data-i18n="navAbout">من نحن</a>
+                    <a href="/settings" data-i18n="navSettings">الإعدادات</a>
+                    <a href="/howto" data-i18n="navHowTo">طريقة الاستخدام</a>
+                </nav>
+            </div>
+
+            <h1 data-i18n="alertsTitle">تنبيهات أمنية مهمة</h1>
+            <p data-i18n="alertsSubtitle">في هذه الصفحة ستجد التنبيهات الفترية والتنبيهات الحالية المرتبطة بالاحتيال والاختراقات الشائعة في المجتمع.</p>
+        </section>
+
+        <section class="card" style="margin-top: 28px;">
+            <div class="alert-feed">
+                <div class="alert-item">
+                    <h3 data-i18n="alertNow1Title">رسائل تنتحل صفة البنوك</h3>
+                    <p data-i18n="alertNow1Text">تنتشر رسائل تطلب تحديث الحساب أو تفعيل البطاقة عبر رابط سريع. لا تدخل بياناتك إلا من التطبيق أو الموقع الرسمي.</p>
+                </div>
+                <div class="alert-item">
+                    <h3 data-i18n="alertNow2Title">روابط شحن وطرود وهمية</h3>
+                    <p data-i18n="alertNow2Text">بعض الرسائل تدّعي وجود شحنة معلقة وتطلب رسومًا بسيطة. هذا أسلوب شائع لسرقة البطاقة البنكية.</p>
+                </div>
+                <div class="alert-item">
+                    <h3 data-i18n="alertNow3Title">حسابات واتساب مزيفة</h3>
+                    <p data-i18n="alertNow3Text">قد تصلك رسالة من رقم غير معروف يطلب رمز التحقق أو مساعدة مالية عاجلة. توقف وتحقق قبل الرد.</p>
+                </div>
+                <div class="alert-item">
+                    <h3 data-i18n="alertNow4Title">جوائز أو استرداد مالي غير متوقع</h3>
+                    <p data-i18n="alertNow4Text">أي رسالة تعدك بجائزة أو استرجاع مبلغ مقابل الضغط على رابط أو إدخال بياناتك يجب اعتبارها مشبوهة.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+</body>
+</html>

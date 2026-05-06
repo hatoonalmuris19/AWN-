@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة التحليل</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-title-key="analyzeResultTitle">
+    <div class="shell">
+        <section class="hero">
+            <div class="hero-top">
+                <div class="brand">
+                    <div class="brand-badge">AWN</div>
+                    <span data-i18n="siteTitle">نظام عون للحماية من الاحتيال</span>
+                </div>
+                <nav class="nav">
+                    <a href="/index" data-i18n="navMessage">تحليل الرسائل</a>
+                    <a href="/alerts" data-i18n="navAlerts">التنبيهات</a>
+                    <a href="/about" data-i18n="navAbout">من نحن</a>
+                    <a href="/settings" data-i18n="navSettings">الإعدادات</a>
+                    <a href="/howto" data-i18n="navHowTo">طريقة الاستخدام</a>
+                </nav>
+            </div>
+
+            <h1 data-i18n="analyzeResultTitle">نتيجة التحليل</h1>
+        </section>
+
+        <section class="card" style="margin-top: 28px;">
+            {% if error %}
+            <div class="status-card danger result-section">
+                <h3 data-i18n="error">خطأ</h3>
+                <p>{{ error }}</p>
+            </div>
+            {% elif result %}
+            <div class="result-grid">
+                <div class="result-hero {% if result.risk_score >= 75 %}result-hero-danger{% elif result.risk_score >= 45 %}result-hero-warning{% else %}result-hero-safe{% endif %}">
+                    <div>
+                        <p class="result-eyebrow" data-i18n="resultOverview">ملخص النتيجة</p>
+                        <h2 class="result-title">{{ result.classification }}</h2>
+                        <p class="result-summary">
+                            {% if result.risk_score >= 75 %}
+                            <span data-i18n="highRiskSummary">الرسالة تحتوي على مؤشرات قوية جدًا لاحتيال أو تصيد ويُنصح بعدم التفاعل معها.</span>
+                            {% elif result.risk_score >= 45 %}
+                            <span data-i18n="mediumRiskSummary">الرسالة تتضمن إشارات مقلقة وتحتاج إلى تحقق دقيق قبل اتخاذ أي إجراء.</span>
+                            {% else %}
+                            <span data-i18n="lowRiskSummary">لم تظهر مؤشرات قوية على الاحتيال، لكن يظل التحقق اليدوي خطوة مهمة.</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="risk-orb">
+                        <span class="risk-orb__value">{{ result.risk_score }}</span>
+                        <span class="risk-orb__label">/100</span>
+                    </div>
+                </div>
+
+                <div class="result-section result-metrics-grid">
+                    <div class="result-metric-card">
+                        <p class="helper" data-i18n="riskScore">درجة الخطورة</p>
+                        <strong>{{ result.risk_score }}/100</strong>
+                    </div>
+                    <div class="result-metric-card">
+                        <p class="helper" data-i18n="messageSourceLabel">مصدر الرسالة</p>
+                        <strong>{{ result.source_label }}</strong>
+                    </div>
+                    <div class="result-metric-card">
+                        <p class="helper" data-i18n="classification">التصنيف</p>
+                        <strong>{{ result.classification }}</strong>
+                    </div>
+                </div>
+
+                <div class="result-columns">
+                    <div class="result-section">
+                        <h3 data-i18n="reasons">الأسباب</h3>
+                        <ul class="tips-list">
+                            {% for reason in result.reasons %}
+                            <li>{{ reason }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="result-section">
+                        <h3 data-i18n="actions">إجراءات مقترحة</h3>
+                        <ul class="tips-list">
+                            {% for action in result.user_actions %}
+                            <li>{{ action }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% if result.sender_hint %}
+                        <div class="result-context">
+                            <p class="helper" data-i18n="senderHintLabel">اسم الجهة أو المرسل</p>
+                            <strong>{{ result.sender_hint }}</strong>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="result-section result-message-card">
+                    <h3 data-i18n="originalMessage">الرسالة الأصلية</h3>
+                    <pre>{{ original_message }}</pre>
+                </div>
+            </div>
+            {% else %}
+            <p data-i18n="noResult">لا توجد نتيجة متاحة حاليًا.</p>
+            {% endif %}
+
+            <div class="page-footer actions">
+                <a class="button-link button-secondary" href="/" data-i18n="backHome">العودة للرئيسية</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+</body>
+</html>

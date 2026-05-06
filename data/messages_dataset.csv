@@ -1,0 +1,118 @@
+text,label
+"Dear customer, your account has been suspended. Verify now using the secure link below.",phishing
+"Your package is waiting. Pay the delivery fee immediately to avoid return.",phishing
+"We detected unusual activity on your bank account. Confirm your identity now.",phishing
+"Congratulations, you won a cash prize. Click the link to claim it today.",phishing
+"Your Apple ID was locked. Login now to restore access.",phishing
+"Customs notice: pay the clearance fee within 2 hours to release your shipment.",phishing
+"Microsoft security alert: reset your password immediately to avoid account closure.",phishing
+"Your PayPal account is limited. Update your billing information now.",phishing
+"Important notice from your bank: verify your OTP code to stop suspension.",phishing
+"Final warning: your email account will be deleted unless you confirm today.",phishing
+"We could not deliver your parcel. Confirm address and payment here.",phishing
+"Your banking session has expired. Sign in again to prevent permanent suspension.",phishing
+"We attempted to deliver your package twice. Confirm address and pay the storage fee now.",phishing
+"Your Netflix payment method failed. Update your billing details immediately to continue service.",phishing
+"Security alert: your mailbox has exceeded its limit. Login here to avoid deactivation.",phishing
+"Your company account is under review. Confirm employee credentials through the link.",phishing
+"Your government benefits are pending. Verify your national ID and bank account now.",phishing
+"A lawsuit has been filed against you. Open the secure message and pay the penalty today.",phishing
+"Bank fraud notice: suspicious transaction detected. Confirm your debit card number now.",phishing
+"Your mobile number will be blocked. Validate your SIM ownership through the attached page.",phishing
+"Parcel customs payment failed. Retry the charge now or your package will be returned.",phishing
+"Your cloud storage was compromised. Reset your password and recovery email immediately.",phishing
+"You are eligible for a loyalty reward. Submit your account details to receive the transfer.",phishing
+"Action required: unusual transfer request. Reconfirm your IBAN and OTP now.",phishing
+"Courier support asks you to download the invoice and verify your card to release shipment.",phishing
+"The payroll department needs your login details to confirm this month salary release.",phishing
+"Your card was flagged for suspicious use. Verify CVV and expiry date to restore service.",phishing
+"You have received a tax refund. Submit your card details to continue.",phishing
+"Security department: suspicious login found. Re-enter password to secure your account.",phishing
+"Your WhatsApp account will expire today. Enter the verification code now.",phishing
+"FedEx shipment on hold. Pay now and confirm delivery details.",phishing
+"Urgent: your salary transfer failed. Verify bank data immediately.",phishing
+"Dear user, your subscription payment failed. Update your card now.",phishing
+"Bank support team asks you to confirm your ATM PIN for identity validation.",phishing
+"Your reward is ready. Open the attached link and enter your login information.",phishing
+"Act now to avoid legal action. Pay the fine using the following URL.",phishing
+"تم تعليق حسابك البنكي بسبب نشاط غير معتاد. حدث بياناتك فورًا عبر الرابط.",phishing
+"عاجل: شحنتك متوقفة في الجمارك. ادفع الرسوم الآن لتجنب الإلغاء.",phishing
+"تم رصد محاولة دخول مشبوهة. يرجى إدخال رمز التحقق وكلمة المرور فورًا.",phishing
+"تهانينا، ربحت جائزة مالية. اضغط على الرابط لاستلام المكافأة.",phishing
+"تنبيه نهائي من البنك: سيتم إيقاف البطاقة خلال ساعتين إذا لم تؤكد هويتك.",phishing
+"شركة الشحن تطلب منك سداد رسوم بسيطة لإعادة جدولة التوصيل.",phishing
+"تم إيقاف حساب أبشر مؤقتًا. يرجى تسجيل الدخول الآن لإعادة التفعيل.",phishing
+"الدعم الفني من مايكروسوفت يطلب منك مشاركة رمز التحقق لإصلاح المشكلة.",phishing
+"لديك استرداد مالي جاهز. أدخل بيانات بطاقتك الآن لإتمام العملية.",phishing
+"تم تعليق البريد الإلكتروني الخاص بك. أكد كلمة المرور خلال 24 ساعة.",phishing
+"رسالة من الشرطة: عليك دفع غرامة مرورية فورًا عبر هذا الرابط.",phishing
+"تم اكتشاف مشكلة في الفاتورة. حدث بيانات الدفع الآن لتجنب الانقطاع.",phishing
+"رقم مجهول يطلب منك تحويل مبلغ بسيط بشكل عاجل بسبب ظرف طارئ.",phishing
+"تم رفض حوالتك. أعد إدخال معلومات الحساب البنكي لتأكيد العملية.",phishing
+"شركتك المصرفية تطلب منك التحقق من OTP وإلا سيتم تجميد الحساب.",phishing
+"هناك نشاط احتيالي على حسابك. سجّل الدخول الآن لتأكيد هويتك.",phishing
+"فاتورتك غير مدفوعة، وسيتم إيقاف الخدمة اليوم ما لم تُحدّث معلومات البطاقة.",phishing
+"تم حظر الشريحة مؤقتًا. يرجى تأكيد ملكية الرقم عبر الرابط المرفق.",phishing
+"إشعار أمني: تم كشف جهاز جديد على حسابك، أدخل كلمة المرور فورًا.",phishing
+"الجمارك تطلب منك سداد رسوم التخليص خلال ساعة لتجنّب إعادة الشحنة.",phishing
+"استلم جائزتك النقدية الآن بعد تأكيد الحساب البنكي والهوية الشخصية.",phishing
+"تم تعليق بريد العمل لديك. سجّل الدخول لإعادة التفعيل قبل نهاية اليوم.",phishing
+"نعتذر، تعذر تحويل الراتب. يرجى تزويدنا برقم الآيبان ورمز التحقق.",phishing
+"إشعار من شركة الاتصالات: سيتم إلغاء الرقم إن لم تؤكد بياناتك الآن.",phishing
+"الدعم الفني يطلب منك تنزيل ملف الحماية ثم إدخال بيانات الحساب.",phishing
+"تم رصد عملية شراء غير معتادة. أكد رقم البطاقة وتاريخ الانتهاء حالًا.",phishing
+"إشعار رسمي: عليك دفع المخالفة عبر الرابط خلال ساعتين لتفادي التصعيد.",phishing
+"نرجو التحقق من هويتك لاستلام التعويض المالي المستحق اليوم.",phishing
+"تم حجز الشحنة في المستودع، وأنت بحاجة لدفع رسوم رمزية لإتمام التوصيل.",phishing
+"أدخل رمز الدخول المرسل لك الآن حتى لا يتم إغلاق حسابك نهائيًا.",phishing
+"مرحبًا، موعدك في العيادة غدًا الساعة 4:30 مساءً.",safe
+"تم شحن طلبك وسيصل خلال يومين دون الحاجة لأي إجراء إضافي.",safe
+"هذا تذكير بموعد الاجتماع غدًا في تمام التاسعة صباحًا.",safe
+"يرجى الحضور إلى المكتب غدًا لتسليم المستندات المطلوبة.",safe
+"تم استلام طلب الإجازة وسيتم الرد عليك خلال يومي عمل.",safe
+"شكراً لتواصلك معنا، سنعاود الاتصال بك قريبًا.",safe
+"Your appointment is confirmed for next Monday at 10 AM.",safe
+"Your order has been dispatched and will arrive tomorrow.",safe
+"Meeting reminder: please join the conference room at 2 PM.",safe
+"Thank you for your purchase. Your invoice is attached for reference.",safe
+"Your support ticket has been received and is under review.",safe
+"Your electricity bill is available on the official app.",safe
+"Reminder: bring your ID card when visiting the clinic tomorrow.",safe
+"The school meeting will begin at 8:30 AM on Tuesday.",safe
+"Your account password was changed successfully from the official app.",safe
+"Please review the attached report before our internal meeting.",safe
+"Dinner is at 8 tonight. Let me know if you are coming.",safe
+"Your monthly statement is available in the official banking application.",safe
+"The maintenance team will visit your building tomorrow morning.",safe
+"Please check your email for the official semester timetable.",safe
+"Your request has been approved and recorded in the company portal.",safe
+"The invoice has been paid successfully. No further action is needed.",safe
+"Your shipment has reached the city warehouse and will be delivered tomorrow.",safe
+"The training session starts at 11 AM. Bring your laptop with you.",safe
+"Thank you. We received your application and will review it shortly.",safe
+"Your appointment was rescheduled to Wednesday at 1 PM.",safe
+"The document was shared with you through the official organization account.",safe
+"A new login to your account was detected and approved from your usual device.",safe
+"Your package was delivered to the reception desk at 3:15 PM.",safe
+"This is a reminder to submit your assignment before Friday.",safe
+"The payment was completed successfully through the official platform.",safe
+"تم تأكيد حجزك في الفندق من يوم الخميس إلى السبت.",safe
+"سنزوركم غدًا بعد صلاة المغرب إن شاء الله.",safe
+"تم إضافة رصيد المكافآت إلى حسابك في التطبيق الرسمي.",safe
+"Your verification code is 482991. Do not share it with anyone.",safe
+"الرمز الخاص بتسجيل الدخول هو 552200 ولا ينبغي مشاركته مع أي شخص.",safe
+"يرجى استخدام التطبيق الرسمي لتحديث معلوماتك إذا رغبت بذلك.",safe
+"The parcel has been delivered successfully to your registered address.",safe
+"تم استلام طلبك وسيتم التواصل معك خلال يومي عمل.",safe
+"موعد المقابلة الشخصية غدًا الساعة 10 صباحًا في مقر الشركة.",safe
+"تم إصدار الفاتورة وهي متاحة الآن في التطبيق الرسمي.",safe
+"سيصل الفني غدًا بين الساعة 3 و5 مساءً لإكمال الصيانة.",safe
+"شكرًا لك، تم توثيق البلاغ وسيتم متابعته من الجهة المختصة.",safe
+"تم تحديث كلمة المرور بنجاح من خلال التطبيق الرسمي الخاص بك.",safe
+"يرجى إحضار الهوية الأصلية عند زيارة الفرع غدًا.",safe
+"سيتم إيداع المبلغ المستحق في حسابك خلال يومي عمل.",safe
+"نذكرك بموعد المحاضرة يوم الثلاثاء الساعة 9 صباحًا.",safe
+"تم قبول طلبك المقدم عبر البوابة الإلكترونية الرسمية.",safe
+"تم تسليم الشحنة إلى الاستقبال في المبنى رقم 4.",safe
+"الاجتماع الداخلي تأجل إلى الخميس القادم دون أي إجراء إضافي.",safe
+"تم خصم قيمة الاشتراك الشهري بنجاح عبر التطبيق الرسمي.",safe

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام عون للحماية من الاحتيال</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-title-key="siteTitle">
+    <div class="shell">
+        <section class="hero">
+            <div class="hero-top">
+                <div class="brand">
+                    <div class="brand-badge">AWN</div>
+                    <span data-i18n="siteTitle">نظام عون للحماية من الاحتيال</span>
+                </div>
+                <nav class="nav">
+                    <a href="/index" data-i18n="navMessage">تحليل الرسائل</a>
+                    <a href="/alerts" data-i18n="navAlerts">التنبيهات</a>
+                    <a href="/about" data-i18n="navAbout">من نحن</a>
+                    <a href="/settings" data-i18n="navSettings">الإعدادات</a>
+                    <a href="/howto" data-i18n="navHowTo">طريقة الاستخدام</a>
+                </nav>
+            </div>
+
+            <h1 data-i18n="indexTitle">افحص الرسائل المشبوهة بسهولة</h1>
+            <p data-i18n="indexSubtitle">ألصق الرسالة المشبوهة وسيقوم النظام بتحليلها وإظهار مستوى الخطورة بشكل واضح.</p>
+        </section>
+
+        <section class="page-grid">
+            <div class="card">
+                <h2 data-i18n="analyzeCardTitle">تحليل رسالة</h2>
+                <form action="/analyze" method="post" class="form-stack">
+                    <input type="hidden" id="uiLanguage" name="ui_language" value="ar">
+
+                    <div class="inline-select">
+                        <div>
+                            <label for="messageSource" data-i18n="messageSourceLabel">مصدر الرسالة</label>
+                            <select id="messageSource" name="message_source">
+                                <option value="sms" data-i18n="sourceSms">رسالة نصية</option>
+                                <option value="email" data-i18n="sourceEmail">بريد إلكتروني</option>
+                                <option value="whatsapp" data-i18n="sourceWhatsapp">واتساب</option>
+                                <option value="telegram" data-i18n="sourceTelegram">تيليجرام</option>
+                                <option value="other" data-i18n="sourceOther">مصدر آخر</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="senderHint" data-i18n="senderHintLabel">اسم الجهة أو المرسل</label>
+                            <input id="senderHint" name="sender_hint" type="text" data-i18n-placeholder="senderHintPlaceholder" placeholder="مثال: البنك أو رقم غير معروف">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" data-i18n="analyzeLabel">نص الرسالة</label>
+                        <textarea id="message" name="message" data-i18n-placeholder="analyzePlaceholder" placeholder="اكتب هنا الرسالة المراد فحصها..."></textarea>
+                    </div>
+                    <div class="actions">
+                        <button type="submit" data-i18n="analyzeButton">ابدأ التحليل</button>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="card">
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <h3 data-i18n="quickTipsTitle">إشارات سريعة</h3>
+                        <ul class="tips-list">
+                            <li data-i18n="quickTip1">الرسائل المستعجلة جدًا غالبًا تحتاج حذرًا أكبر.</li>
+                            <li data-i18n="quickTip2">لا تشارك كلمات المرور أو رموز التحقق أبدًا.</li>
+                            <li data-i18n="quickTip3">تحقق من الجهة المرسلة قبل التفاعل مع الرسالة.</li>
+                        </ul>
+                    </div>
+
+                    <div style="border-top: 1px solid #ddd; padding-top: 15px;">
+                        <h3 data-i18n="linkCheckerTitle">أدوات فحص الروابط</h3>
+                        <p class="helper" data-i18n="linkCheckerText">اختر الأداة المفضلة لفحص صحة الروابط:</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button type="button" id="urlscanBtn" class="link-checker-btn" data-tool="urlscan" style="flex: 1; min-width: 100px;">
+                                <span>🔍</span>
+                                <span data-i18n="urlscanLabel">urlscan</span>
+                            </button>
+                            <button type="button" id="virsoBtn" class="link-checker-btn" data-tool="virustotal" style="flex: 1; min-width: 100px;">
+                                <span>🛡️</span>
+                                <span data-i18n="virsoLabel">virustotal</span>
+                            </button>
+                        </div>
+                        <p class="helper" style="margin-top: 10px; font-size: 12px;" data-i18n="selectedTool">الأداة المختارة: <span id="selectedToolDisplay">urlscan</span></p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+</body>
+</html>
+

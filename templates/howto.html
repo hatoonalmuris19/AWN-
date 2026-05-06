@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طريقة الاستخدام</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-title-key="howtoTitle">
+    <div class="shell">
+        <section class="hero">
+            <div class="hero-top">
+                <div class="brand">
+                    <div class="brand-badge">AWN</div>
+                    <span data-i18n="siteTitle">نظام عون للحماية من الاحتيال</span>
+                </div>
+                <nav class="nav">
+                    <a href="/index" data-i18n="navMessage">تحليل الرسائل</a>
+                    <a href="/alerts" data-i18n="navAlerts">التنبيهات</a>
+                    <a href="/about" data-i18n="navAbout">من نحن</a>
+                    <a href="/settings" data-i18n="navSettings">الإعدادات</a>
+                    <a href="/howto" data-i18n="navHowTo">طريقة الاستخدام</a>
+                </nav>
+            </div>
+
+            <h1 data-i18n="howtoTitle">كيفية استخدام النظام</h1>
+            <p data-i18n="howtoSubtitle">خطوات بسيطة لفحص الرسائل واتخاذ قرار آمن.</p>
+        </section>
+
+        <section class="guide-grid" style="margin-top: 28px;">
+            <div class="guide-step">
+                <div class="step-badge">1</div>
+                <h3 data-i18n="step1Title">أدخل الرسالة</h3>
+                <p data-i18n="step1Text">الصق نص الرسالة أو الرابط في صفحة التحليل، ويمكنك أيضًا تحديد مصدر الرسالة والجهة المرسلة إن كانت معروفة.</p>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-badge">2</div>
+                <h3 data-i18n="step2Title">ابدأ الفحص</h3>
+                <p data-i18n="step2Text">بعد الضغط على زر التحليل يبدأ النظام بمراجعة النص والروابط والإشارات الاحتيالية المحتملة.</p>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-badge">3</div>
+                <h3 data-i18n="step3Title">اقرأ النتيجة</h3>
+                <p data-i18n="step3Text">ستظهر لك درجة الخطورة والتصنيف مع أسباب واضحة تساعدك على فهم سبب اعتبار الرسالة آمنة أو مشبوهة.</p>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-badge">4</div>
+                <h3 data-i18n="step4Title">راجع الروابط</h3>
+                <p data-i18n="step4Text">إذا كانت الرسالة تحتوي على رابط، سيعرض النظام ملاحظات تساعدك على معرفة إن كان الرابط يبدو طبيعيًا أو يحتاج حذرًا.</p>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-badge">5</div>
+                <h3 data-i18n="step5Title">اتخذ القرار الآمن</h3>
+                <p data-i18n="step5Text">إذا ظهرت مؤشرات خطر، لا تضغط على الرابط ولا تشارك بياناتك، وتحقق من الجهة عبر قناة رسمية موثوقة.</p>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-badge">6</div>
+                <h3 data-i18n="step6Title">تابع التنبيهات</h3>
+                <p data-i18n="step6Text">صفحة التنبيهات تعرض أمثلة ومخاطر حالية تساعدك على التعرف على الأساليب الشائعة في الاحتيال الرقمي.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/accessibility.js') }}"></script>
+</body>
+</html>
